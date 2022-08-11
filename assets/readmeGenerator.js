@@ -1,5 +1,7 @@
-
-        # Readme
+class contentReadMe {
+    static generateReadMe(answers) {
+        return `
+        # ${answers.title}
         ##Table Content
         -[Project Description](#Description)
         -[Usage](#Usage)
@@ -9,16 +11,20 @@
         -[License](#License)
 
         ##Description
-        idk
+        ${answers.description}
 
         ##Usage
-        idk
+        ${answers.usage}
 
         ##Installation
-        idk
+        ${answers.installation}
 
         ##Contributing
-        idk5
+        ${answers.contributing}
 
         ##
-        
+        `
+    }
+}
+
+module.exports = contentReadMe
